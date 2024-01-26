@@ -12,7 +12,7 @@
 
 clear all; close all; clc;
 
-taskpath       = 'F:/ENGRAMS/';
+taskpath       = 'E:/ENGRAMS/';
 savepath_behav = [taskpath 'data/behav/'];
 logpath        = [taskpath 'data/logs/'];
 addpath(genpath([taskpath 'scripts']))
@@ -73,7 +73,7 @@ if strcmp(confirmation,'Yes')==1
     if strcmp(tasktype,'Encoding')==1
         
         if strcmp(phase,'Original')==1
-            behavfilename  = [num2str(id) '_encaa_orig_' num2str(block) '.mat'];
+            behavfilename  = [num2str(id) '_enc_orig_' num2str(block) '.mat'];
         elseif strcmp(phase,'Recombination')==1
             behavfilename  = [num2str(id) '_enc_recombi_' num2str(block) '.mat'];
         end

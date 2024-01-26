@@ -167,8 +167,8 @@ black=BlackIndex(screenNumber);
 % the window. 'wRect' is a rectangle defining the size of the window.
 % See "help PsychRects" for help on such rectangles and useful helper
 % functions:
-% oldRes=SetResolution(0,2560,1440);
-oldRes=SetResolution(0,1920,1080); % at 7T, only this resolution works
+oldRes=SetResolution(0,2560,1440);
+% oldRes=SetResolution(0,1920,1080); % at 7T, only this resolution works
 [w, wRect]=Screen('OpenWindow',screenNumber, black);
 [mx, my] = RectCenter(wRect);
 W=wRect(3); H=wRect(4);

@@ -212,7 +212,7 @@ end
 % presenting an image
 
 % Load the instruction text
-instruction = imread([paths.elements 'instr_orig_recognition.png']);
+instruction = imread([paths.elements 'instr_' phases '_recognition.png']);
 
 % Create a texture from the image
 tex=Screen('MakeTexture', w, instruction);
